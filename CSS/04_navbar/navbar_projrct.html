@@ -16,6 +16,7 @@
 
       .nav-container {
         margin-bottom: 40px;
+        
       }
 
       h2 {
@@ -33,6 +34,7 @@
         justify-content: space-around;
         margin: 0;
         padding: 0;
+        
       }
 
       .nav1 li {
@@ -40,7 +42,6 @@
       }
 
       .nav1 a {
-        
         text-decoration: none;
         color: #1a1a1a;
         font-weight: bold;
@@ -49,18 +50,15 @@
         border: 2px solid #1a1a1a;
         position: relative;
         
-        ;
       }
 
-      .nav1 .login_btn{
+      .nav1 .login_btn {
         background-color: #e6e0e0;
         padding: 5px 15px;
         cursor: crosshair;
-
       }
 
-
-      .nav1 a::after{
+      .nav1 a::before {
         position: absolute;
         content: "abc";
         height: 2px;
@@ -72,8 +70,88 @@
         transition: transform 0.3s ease-in-out;
       }
 
-      .nav1 a:hover::after{
+      .nav1 a:hover::after {
         transform: scaleY(1);
+      }
+
+      .nav2 {
+        background-color: rgb(161, 84, 234);
+        width: 200px;
+        padding: 20px;
+      }
+
+      .nav2 ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+
+      .nav2 li {
+        margin-bottom: 20px;
+      }
+
+      .nav2 a {
+        text-decoration: none;
+        color: #1a1a1a;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        color: azure;
+        font-weight: bold;
+        padding: 10px;
+        display: block;
+        width: 100%;
+      }
+
+      .nav2 a:hover {
+        background: rgb(183, 8, 218);
+        width: 90%;
+      }
+
+      .nav2 .login_btn {
+        background: azure;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      .nav2 .login_btn:hover {
+        background-color: rgb(255, 42, 241);
+        border: 3px solid black;
+        cursor: pointer;
+      }
+
+      .nav3 {
+        background-color: rgb(0, 136, 255);
+        padding: 10px;
+      }
+
+      .nav3 ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .nav3 a{
+        text-decoration: none;
+        color:#e6e0e0;
+        font-size: large;
+        font-weight: bold;
+        display: block;
+        padding: 10px;
+      }
+
+      .nav3 .dropdown-content{
+        display: none;
+        color: black;
+      }
+
+      .nav3 .dropdown:hover .dropdown-content{
+        display: block;
+        position: absolute;
+        background-color: rgb(87, 158, 240);
+        
       }
 
 
@@ -110,7 +188,14 @@
       <nav class="nav3">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li class = "dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+              <a href="#">Our Story</a>
+              <a href="#">Team</a>
+              <a href="#">Contact</a>
+          </div>
+        </li>
           <li><a href="#">Products</a></li>
           <li><button class="login_btn">Login</button></li>
         </ul>
