@@ -18,9 +18,8 @@ html, body{
     height: 100%;
 }
 
-.heading h1{
-    
-    
+.heading{
+    width: 100%;
     justify-content: center;
     text-align: center;
     color: white;
@@ -28,26 +27,22 @@ html, body{
     margin: 20px;
     font-family: "Pacifico", cursive;
   font-weight: 400;
+  font-size: 50px;
   font-style: normal;   
 }
 
-.container{
-    border-style: solid;
-    border-width: 3px;
-}
 
-.card_section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 80px;
-    justify-content: space-around;
-    
-    height: 75%;
-    
+
+.card_section {
+    display: flex;
+    justify-content: space-around; /* Equal spacing on ends + between */
+    flex-wrap: wrap;
+    gap: 40px; /* Optional: for row spacing */
     padding: 30px;
     margin: 40px;
-    color:white;
+    color: white;
 }
+
 
 .card{
     border-style: solid;
@@ -147,7 +142,6 @@ button:hover{
 }
 
 .footer{
-    border-style: solid;
-    border-width: 3px;
+    text-align: right;
     color: white;
 }
