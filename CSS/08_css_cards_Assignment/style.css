@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Offside&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: #021c3d;
+    height: 100%;
+}
+
+
+
+.page{
+    
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 0.125fr;
+    height: 100%;
+}
+
+.heading h1{
+    
+    
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;   
+}
+
+.container{
+    border-style: solid;
+    border-width: 3px;
+}
+
+.card_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+    justify-content: space-around;
+    
+    height: 75%;
+    
+    padding: 30px;
+    margin: 40px;
+    color:white;
+}
+
+.card{
+    border-style: solid;
+    border-color: #8a2be2;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.285);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card:hover{
+    border-color: black;
+    
+}
+
+.card1_img{
+    padding: 25px;
+    height: 250px;
+}
+
+.card2_img{
+    padding: 25px;
+    height: 250px;
+}
+
+.card3_img{
+    padding: 25px;
+    height: 250px;
+}
+
+h2{
+    
+    margin: 0;
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+
+}
+
+p{
+    padding: 15px;
+    margin: 0;
+    
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+    
+}
+
+.card1{
+    transition: background-color 0.5s ease-in-out ;
+}
+
+.card1:hover{
+    background-color: rgb(17, 211, 34);
+}
+
+
+
+.card2{
+    transition: background-color 0.5s ease-in-out ;
+}
+
+.card2:hover{
+    background-color: rgb(211, 17, 43);
+}
+
+
+.card3{
+    transition: background-color 0.5s ease-in-out ;
+}
+
+.card3:hover{
+    background-color: rgb(235, 33, 215);
+}
+
+button{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #8a2be2;
+    color: #fff;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out ;
+    
+}
+
+button:hover{
+    background-color: black;
+}
+
+.footer{
+    border-style: solid;
+    border-width: 3px;
+    color: white;
+}

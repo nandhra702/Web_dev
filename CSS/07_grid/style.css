@@ -1,0 +1,47 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.item{
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+.item1{
+    
+    background: linear-gradient(45deg, #03b967 , rgb(60, 111, 230))
+}
+
+.item2{
+    background: linear-gradient(45deg, #f48507 , rgb(227, 60, 230))
+}
+
+.item3{
+    background: linear-gradient(45deg, #b90343 , rgb(60, 111, 230))
+}
+
+.item4{
+    background: linear-gradient(45deg, #a1b903 , rgb(140, 31, 12))
+}
+
+.item5{
+    background: linear-gradient(45deg, #e70cac , rgb(60, 111, 230))
+}
+
+.item6{
+    background: linear-gradient(45deg, #78da23 , rgb(201, 18, 137))
+}
+
+.grid-container{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    display: grid;
+    height: 100%;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    gap: 3px;
+}
+
